@@ -101,7 +101,7 @@ updater.dispatcher.add_handler(MessageHandler(Filters.user(username=targets_user
 
 PORT = os.environ.get("PORT", 5000)
 
-updater.start_webhook( # webhook info. You probably need to edit only the "webhook_url" argument. It's possible to change this to argumentless ".start_polling()" and the bot will work and webhooks are superior
+updater.start_webhook( # webhook info. You probably need to edit only the "webhook_url" argument. It's possible to change this to argumentless ".start_polling()" and the bot will work but webhooks are superior
     listen="0.0.0.0",
     port=PORT,
     url_path=BOT_TOKEN,
